@@ -10,6 +10,7 @@ from crowdsourcing import views
 from crowdsourcing.viewsets.project import *
 from crowdsourcing.viewsets.user import UserViewSet, UserProfileViewSet, UserPreferencesViewSet
 from crowdsourcing.viewsets.requester import RequesterRankingViewSet, RequesterViewSet
+from crowdsourcing.viewsets.worker import SkillViewSet, WorkerSkillViewSet, WorkerViewSet, TaskViewSet, TaskWorkerViewSet, WorkerModuleApplicationViewSet, TaskWorkerResultViewSet, QualificationViewSet , CurrencyViewSet
 
 from rest_framework.routers import SimpleRouter
 router = SimpleRouter(trailing_slash=True)
@@ -21,6 +22,15 @@ router.register(r'api/requester', RequesterViewSet)
 router.register(r'api/project', ProjectViewSet)
 router.register(r'api/category', CategoryViewSet)
 router.register(r'api/module', ModuleViewSet)
+router.register(r'api/WorkerSkill', WorkerSkillViewSet)
+router.register(r'api/Worker', WorkerViewSet)
+router.register(r'api/Skill', SkillViewSet)
+router.register(r'api/Task', TaskViewSet)
+router.register(r'api/TaskWorker', TaskWorkerViewSet)
+router.register(r'api/WorkerModuleApplication', WorkerModuleApplicationViewSet)
+router.register(r'api/TaskWorkerResult', TaskWorkerResultViewSet)
+router.register(r'api/Qualification', QualificationViewSet)
+router.register(r'api/Currency', CurrencyViewSet)
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls) ),
