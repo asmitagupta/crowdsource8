@@ -15,6 +15,8 @@ angular
     'crowdsource.ranking',
     'crowdsource.tasksearch',
     'crowdsource.tasks',
+    'crowdsource.workerskill',
+    'crowdsource.workerdetails',
   ]);
 
 angular
