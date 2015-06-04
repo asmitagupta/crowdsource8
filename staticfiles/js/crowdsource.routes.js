@@ -26,6 +26,16 @@
       controller: 'RankingController',
     })
     
+    .when('/workerskill', {
+      templateUrl: '/static/templates/workerskill/skill.html',
+      controller: 'WorkerskillController',
+    })
+    
+    .when('/workerdetails', {
+      templateUrl: '/static/templates/workerdetails/details.html',
+      controller: 'WorkerdetailsController',
+    })
+    
     //We will merge tasklistSearch and tasklist to one component, please keep it separate for now.
     .when('/tasklistSearch', {
     templateUrl: '/static/templates/tasksearches/tasklistSearch.html',
