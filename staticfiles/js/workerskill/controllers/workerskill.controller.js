@@ -1,5 +1,3 @@
-//@TODO move to serivces 
-//__author__ = 'neilthemathguy'
 
 var workerskillApp = angular.module('crowdsource.workerskill.controllers', ['ngGrid']);
 
